@@ -7434,41 +7434,41 @@
         Rows bearing angle.
       </description>
     </field>
-    <field name="Cross Angle" abbrev="cross_angle" type="fp64_t" unit="rad" min="-1.047197551197" max="1.047197551197">
+    <!-- <field name="Cross Angle" abbrev="cross_angle" type="fp64_t" unit="rad" min="-1.047197551197" max="1.047197551197">
       <description>
         Rows cross angle reference.
       </description>
-    </field>
+    </field> -->
     <field name="Width" abbrev="width" min="0" type="fp32_t" unit="m">
       <description>
         Width of the maneuver.
       </description>
     </field>
-    <field name="Length" abbrev="length" min="0" type="fp32_t" unit="m">
+    <!-- <field name="Length" abbrev="length" min="0" type="fp32_t" unit="m">
       <description>
         Length of the maneuver.
       </description>
-    </field>
+    </field> -->
     <field name="Curve Offset" abbrev="coff" type="uint8_t" unit="m">
       <description>
         Desired curve offset.
       </description>
     </field>
-    <field name="Angular Aperture" abbrev="angAperture" type="fp32_t" unit="rad" min="-3.141592653589793" max="3.141592653589793" value="2.094395">
+    <!-- <field name="Angular Aperture" abbrev="angAperture" type="fp32_t" unit="rad" min="-3.141592653589793" max="3.141592653589793" value="2.094395">
       <description>
          Angular aperture of the sensor (looking downwards).
       </description>
-    </field>
+    </field> -->
     <field name="Range" abbrev="range" type="uint16_t" unit="m">
       <description>
         Maximum range of the sensor (in meters downwards from the vehicle's position).
       </description>
     </field>
-    <field name="Overlap" abbrev="overlap" type="uint8_t" unit="%" max="100" value="10">
+    <!-- <field name="Overlap" abbrev="overlap" type="uint8_t" unit="%" max="100" value="10">
       <description>
         Amount of overlap among different transect surveys.
       </description>
-    </field>
+    </field> -->
     <field name="Flags" abbrev="flags" type="uint8_t" unit="Bitfield" prefix="FLG">
       <description>
         Maneuver optional flags.
@@ -7487,6 +7487,11 @@
     <field name="Custom settings for maneuver" abbrev="custom" unit="TupleList" type="plaintext">
       <description>
         Custom settings for maneuver.
+      </description>
+    </field>
+    <field name="H step" abbrev="hstep" type="fp64_t" unit="meter">
+      <description>
+        Eeach line separation distance
       </description>
     </field>
   </message>
